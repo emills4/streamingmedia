@@ -1,11 +1,49 @@
 
+/* Nav instructions from video */
+nav {
+    width: 375px;
+    background-color: #030ABC;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+}
+nav ul {
+    text-align: center;
+}
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+}
 
-
-/* Menu - From Content Share folder */
+/* Menu - From Content Share folder and video */
 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     overflow: hidden;
+    background-color: #2104d9;
     max-height: 0;
     transition: max-height .2s ease-out;
+}
+li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+[href="#home"] {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 90px;
+    padding: 16px 20px;
+}
+a:hover, input:hover {
+    background-color: #590242;
 }
 label {
     cursor: pointer;
@@ -106,12 +144,10 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
     border-radius: 50%;
-
 }
 audio::-webkit-media-controls-play-button {
     background-color: #ffffff;
     border-radius: 50%;
-
 }
 audio::-webkit-media-controls-enclosure {
     background-color: rgba(255,255,255,.5);

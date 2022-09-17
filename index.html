@@ -2,24 +2,29 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css"/>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=.0">
         <title>Streaming Media Assignment</title>
     </head>
     <body>
     <header>
         <h1>MuzakMaker</h1>
         <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+    </header>
         <nav>
+            <h2>Main Navigation</h2>
+            <input type="checkbox" id="dropdown"/>
+            <label for="dropdown"><span></span></label>
             <ul>
-                <li>MuzakMaker</li>
-                <li>Trending Songs</li>
-                <li>Your playlists</li>
-                <li>Curated Playlists</li>
-                <li><img src="imgs/duke-silver.png" alt="duke silver"></li>
+                <li><a href=#home>MuzakMaker</a></li>
+                <li><a href=#trending>Trending Songs <br />Songs </a></li>
+                <li><a href=#playlists>Your playlists <br />Playlists</a></li>
+                <li><a href=#curated>Curated Playlists <br /> Playlists</a></li>
+                <li><a href=#user><img src="imgs/duke-silver.png" alt="duke silver"></a></li>
             </ul>
         </nav>
-    </header>
+    
     <main>
         <section id="trending">
             <h2>Trending Songs</h2>
@@ -36,6 +41,51 @@
                     <audio
                         contols
                         src="media/aloma.mp3">
+                        Your Browser does not support the <code>audio</code> element.
+                    </audio>
+                </section>
+                <section>
+                    <div>
+                        <h3>My Road</h3>
+                            <dl>
+                                <dt>Artist</dt>
+                                <dd>Nesterouk</dd>
+                            </dl>
+                    </div>
+                    <img src="imgs/my-road-cover.png" alt="road">
+                    <audio
+                        contols
+                        src="media/my-road.mp3">
+                        Your Browser does not support the <code>audio</code> element.
+                    </audio>
+                </section>
+                <section>
+                    <div>
+                        <h3>Papaya</h3>
+                            <dl>
+                                <dt>Artist</dt>
+                                <dd>Dredstudio</dd>
+                            </dl>
+                    </div>
+                    <img src="imgs/papaya-cover.png" alt="papaya">
+                    <audio
+                        contols
+                        src="media/papaya.mp3">
+                        Your Browser does not support the <code>audio</code> element.
+                    </audio>
+                </section>
+                <section>
+                    <div>
+                        <h3>Smoothies</h3>
+                            <dl>
+                                <dt>Artist</dt>
+                                <dd>Black Rhomb</dd>
+                            </dl>
+                    </div>
+                    <img src="imgs/smoothies-cover.png" alt="smoothies">
+                    <audio
+                        contols
+                        src="media/smoothies.mp3">
                         Your Browser does not support the <code>audio</code> element.
                     </audio>
                 </section>
