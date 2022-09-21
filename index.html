@@ -10,7 +10,10 @@
     <body>
     <header>
         <h1>MuzakMaker</h1>
+        <section class="gradient">
+        <h2>SMOOTH JAZZ</h2>
         <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+        </section>
     </header>
         <nav>
             <h2>Main Navigation</h2>
@@ -18,16 +21,16 @@
             <label for="dropdown"><span></span></label>
             <ul>
                 <li><a href=#home>MuzakMaker</a></li>
-                <li><a href=#trending>Trending Songs <br />Songs </a></li>
-                <li><a href=#playlists>Your playlists <br />Playlists</a></li>
-                <li><a href=#curated>Curated Playlists <br /> Playlists</a></li>
+                <li><a href=#trending>Trending Songs </a></li>
+                <li><a href=#playlists>Your playlists</a></li>
+                <li><a href=#curated>Curated Playlists</li>
                 <li><a href=#user><img src="imgs/duke-silver.png" alt="duke silver"></a></li>
             </ul>
         </nav>
     
     <main>
         <section id="trending">
-            <h2>Trending Songs</h2>
+            <h3 class="title">Trending Songs</h3>
             <div class="scroll">
                 <section>
                     <div>
@@ -89,9 +92,101 @@
                         Your Browser does not support the <code>audio</code> element.
                     </audio>
                 </section>
-            </div>
-        </section>
+                <section>
+                    <div>
+                        <h3>Successful Performance</h3>
+                            <dl>
+                                <dt>Artist</dt>
+                                <dd>Bombino</dd>
+                            </dl>
+                    </div>
+                    <img src="imgs/successful-performance-cover.png" alt="some dude">
+                    <audio
+                        contols
+                        src="media/successful-performance.mp3">
+                        Your Browser does not support the <code>audio</code> element.
+                    </audio>
+                </section>
+            </div> <!--End of .scroll div-->
+            <button>More Trending</button>
+        </section> <!--End of #trending Section-->
+        <section id="playlists">
+            <h3 class="title">Your Playlists</h3>
+            <div class="scroll light-blue">
+                <section class="med-blue">
+                    <img src="imgs/best-of-2020-cover.png">
+                            <h3>Best of 2020</h3>
+                            <p>The music that got you through the lock down.</p>
+                </section>
+                <section class="med-blue">
+                    <img src="imgs/pumpkin-spice-cover.png">
+                            <h3>Pumpkin Spice</h3>
+                            <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                </section>
+                <section class="med-blue">
+                    <img src="imgs/quiet-storm-cover.png">
+                            <h3>Quite Storm</h3>
+                            <p>Slow tempos and relaxed rhythms.</p>
+                </section>
+                <section class="med-blue">
+                    <img src="imgs/smooth-jazz-cover.png">
+                            <h3>Smooth Jazz</h3>
+                            <p>The pioneers of smooth jazz.</p>
+                </section>
+                <section class="med-blue">
+                    <img src="imgs/smooth-study-cover.png">
+                            <h3>Smooth Study</h3>
+                            <p>Background music to keep you going while you study.</p>       
+                </section>
+
+            </div> <!--End of .scroll div-->
+            <button>All your playlists</button>
+        </section> <!--End of #playlists Section-->
+        <section id="curated">
+            <h3 class="title">Curated Playlists</h3>
+            <div class="scroll drk-blue">
+            <section class="drk-blue-too">
+                <img src="imgs/boozy-brunch-cover.png">
+                
+                    <h3>Boozy Brunch</h3>
+                    <p>Light up the afternoon with these energetic hits. </p>
+                
+            </section>
+            <section class="drk-blue-too">
+                <img src="imgs/dinner-party-cover.png">
+                
+                    <h3>Dinner Party</h3>
+                    <p>Background music to give your party life, but allow your guests to chat.  </p>
+                
+            </section>
+            <section class="drk-blue-too">
+                <img src="imgs/mellow-cover.png">
+                
+                    <h3>Mellow</h3>
+                    <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
+                
+            </section>
+            <section class="drk-blue-too">
+                <img src="imgs/jazz-chill-cover.png">
+                
+                    <h3>Jazz and Chill</h3>
+                    <p>Set the mood with these silky sounds.</p>
+                
+            </section>
+            <section class="drk-blue-too">
+                <img src="imgs/smooth-saxophone-cover.png">
+                
+                    <h3>Jazz Saxophone</h3>
+                    <p>The greatest collection of your sax favorites.</p>
+                
+            </section>
+        </div> <!--End of .scroll div-->
+        <button>More Curated</button>
+        </section><!--End of #curated Section-->
     </main>
     </body>
+    <footer>
+        <small>Copyright 2022 Smooth Jazz</small>
+    </footer>
 
 </html>

@@ -1,3 +1,71 @@
+/* My additions */
+html {
+    background: #020659;
+    font-family: "RalewayRegular", sans-serif;
+}
+body{
+    background: #fff;
+    margin: 0 auto;
+    width: 375px;
+}
+.gradient {
+    background: rgb(0,112,255);
+    background: linear-gradient(90deg, rgba(0,112,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);
+    padding: 10px 30px;
+    color: #fff;
+}
+h1 {
+    margin: 0px;
+}
+.title {
+    color: #590242;
+    margin-left: 35px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+#trending h3 {
+    margin: 0;
+    color: #590242;
+    text-transform: uppercase;
+}
+button {
+    background: #590242;
+    border: #590242;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 10px;
+}
+section .med-blue {
+    background: #2594e9;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+section .drk-blue-too {
+    background: #020659;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+.med-blue h3, .drk-blue h3{
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.light-blue {
+    background: #3ca0ec;
+}
+.drk-blue {
+    background: #030ABC;
+}
+footer {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    color: #590242;
+}
 
 /* Nav instructions from video */
 nav {
@@ -14,6 +82,7 @@ nav ul {
 nav h2 {
     visibility: hidden;
     height: 1px;
+    float: right;
 }
 
 /* Menu - From Content Share folder and video */
@@ -95,6 +164,32 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 @media screen and (min-width:834px) {
+    body {
+        margin: 0 auto;
+        width: 834px;
+    }
+    nav {
+        width: 834px;
+    }
+    button {
+        float: right;
+        overflow: auto;
+    }
+    #playlists {
+        width: 417px;
+        float: left;
+        clear: both;
+    }
+    #curated {
+        width: 417px;
+        float: right;
+    }
+    #curated img, #playlists img {
+        float: left;
+    }
+    footer {
+        clear: both;
+    }
     ul {
         overflow: visible;
         position: absolute;
@@ -105,40 +200,111 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     label span, input {
         display: none;
     }
+    #playlists .scroll, #curated .scroll {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #trending ::-webkit-scrollbar {
+        height: 15px;
+    }
+    #trending ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 15px #590242;
+    }
+    #trending ::-webkit-scrollbar-thumb {
+        background: #590242;
+        border-radius: 5px;
+    }
+    #trending ::-webkit-scrollbar-thumb:hover {
+        background: #020659;
+    }
+    #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+        height: 15px;
+    }
+    #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+        box-shadow: inset 0 0 15px #020659;
+    }
+    #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+        background: #020659;
+        border-radius: 5px;
+    }
+    #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+    
 } 
 /* --END-- Menu - From Content Share folder  */
 
-/* Scroll */
-/*
-#trending ::-webkit-scrollbar {
+/* Scroll from content share folder and video*/
 
+.scroll {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scroll section {
+    margin: 10px;
+    position: relative;
+}
+
+.scroll div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+
+dl { 
+    display: flex;
+    color: #590242;
+    margin: 10px;
+}
+
+dt {
+    padding-right: 5px;
+    font-style: italic;
+}
+
+dd {
+    margin-left: 10px;
+}
+
+audio {
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+}
+
+#trending ::-webkit-scrollbar {
+    width: 15px;
 }
 #trending ::-webkit-scrollbar-track {
-
+    box-shadow: inset 0 0 15px #590242;
 }
 #trending ::-webkit-scrollbar-thumb {
-
+    background: #590242;
+    border-radius: 5px;
 }
 #trending ::-webkit-scrollbar-thumb:hover {
-
+    background: #020659;
 }
 #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
-
+    width: 15px;
 }
 #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
-
+    box-shadow: inset 0 0 15px #020659;
 }
 #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
-
+    background: #020659;
+    border-radius: 5px;
 }
 #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-
+    background: #ffffff;
 }
-
-*/
-
-
-
 
 /* Audio */
 audio::-webkit-media-controls-mute-button {
